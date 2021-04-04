@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7b07170fe32b4e809a222a62a718d0f5" Name="Diagram1">
+        <EntityTypeShape EntityType="database_were_mobileModel.Barcode" Width="1.5" PointX="8.25" PointY="8.25" />
+        <EntityTypeShape EntityType="database_were_mobileModel.Contragent" Width="1.5" PointX="0.75" PointY="4.125" />
+        <EntityTypeShape EntityType="database_were_mobileModel.Document" Width="1.5" PointX="3" PointY="4.25" />
+        <EntityTypeShape EntityType="database_were_mobileModel.DocumentPayment" Width="1.5" PointX="5.25" PointY="4.625" />
+        <EntityTypeShape EntityType="database_were_mobileModel.DocumentRow" Width="1.5" PointX="8.25" PointY="4.25" />
+        <EntityTypeShape EntityType="database_were_mobileModel.Lot" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="database_were_mobileModel.Product" Width="1.5" PointX="6" PointY="7.875" />
+        <EntityTypeShape EntityType="database_were_mobileModel.Setting" Width="1.5" PointX="0.75" PointY="8.5" />
+        <EntityTypeShape EntityType="database_were_mobileModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="8.5" />
+        <AssociationConnector Association="database_were_mobileModel.FK_barcodes_products" />
+        <AssociationConnector Association="database_were_mobileModel.FK_Document_Contragent" />
+        <AssociationConnector Association="database_were_mobileModel.FK_Document_Contragent1" />
+        <AssociationConnector Association="database_were_mobileModel.FK_document_row_documents" />
+        <AssociationConnector Association="database_were_mobileModel.FK_DocumentPayment_Document" />
+        <AssociationConnector Association="database_were_mobileModel.FK_document_row_products" />
+        <AssociationConnector Association="database_were_mobileModel.FK_DocumentRow_Lot" />
+        <AssociationConnector Association="database_were_mobileModel.FK_lots_products" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

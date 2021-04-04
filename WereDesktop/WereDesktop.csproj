@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D571125D-F28B-4EA5-9BE8-641B9F48A676}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WereDesktop</RootNamespace>
+    <AssemblyName>WereDesktop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2.UI, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.2.Extensions, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Barcode.cs">
+      <DependentUpon>WereDesktopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\DocumentRowCart.cs" />
+    <Compile Include="Classes\Extensions.cs" />
+    <Compile Include="Classes\Product.cs" />
+    <Compile Include="Contragent.cs">
+      <DependentUpon>WereDesktopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\XtraUserControlContragents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\XtraUserControlContragents.Designer.cs">
+      <DependentUpon>XtraUserControlContragents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\XtraUserControlCreateDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\XtraUserControlCreateDocument.Designer.cs">
+      <DependentUpon>XtraUserControlCreateDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\XtraUserControlDocuments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\XtraUserControlDocuments.Designer.cs">
+      <DependentUpon>XtraUserControlDocuments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\XtraUserControlProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\XtraUserControlProducts.Designer.cs">
+      <DependentUpon>XtraUserControlProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document.cs">
+      <DependentUpon>WereDesktopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentPayment.cs">
+      <DependentUpon>WereDesktopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentRow.cs">
+      <DependentUpon>WereDesktopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddBarcodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddBarcodeForm.Designer.cs">
+      <DependentUpon>AddBarcodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddContragentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddContragentForm.Designer.cs">
+      <DependentUpon>AddContragentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddDocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddDocumentForm.Designer.cs">
+      <DependentUpon>AddDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddDocumentRowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddDocumentRowForm.Designer.cs">
+      <DependentUpon>AddDocumentRowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddLotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddLotForm.Designer.cs">
+      <DependentUpon>AddLotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddProductForm.Designer.cs">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddProductToDocumentRowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddProductToDocumentRowForm.Designer.cs">
+      <DependentUpon>AddProductToDocumentRowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditBarcodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditBarcodeForm.Designer.cs">
+      <DependentUpon>EditBarcodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditContragentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditContragentForm.Designer.cs">
+      <DependentUpon>EditContragentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditDocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditDocumentForm.Designer.cs">
+      <DependentUpon>EditDocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditDocumentRowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditDocumentRowForm.Designer.cs">
+      <DependentUpon>EditDocumentRowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditLotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditLotForm.Designer.cs">
+      <DependentUpon>EditLotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditProductForm.Designer.cs">
+      <DependentUpon>EditProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MixedPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MixedPaymentForm.Designer.cs">
+      <DependentUpon>MixedPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PayInCashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PayInCashForm.Designer.cs">
+      <DependentUpon>PayInCashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectContragentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectContragentForm.Designer.cs">
+      <DependentUpon>SelectContragentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lot.cs">
+      <DependentUpon>WereDesktopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>WereDesktopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\XtraReportDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\XtraReportDocument.Designer.cs">
+      <DependentUpon>XtraReportDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs">
+      <DependentUpon>WereDesktopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>WereDesktopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\CheckBarcode.cs" />
+    <Compile Include="Utils\GenerateDocumentNumber.cs" />
+    <Compile Include="Utils\SelectedContragent.cs" />
+    <Compile Include="WereDesktopModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WereDesktopModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WereDesktopModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WereDesktopModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WereDesktopModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WereDesktopModel.edmx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\XtraUserControlContragents.resx">
+      <DependentUpon>XtraUserControlContragents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\XtraUserControlCreateDocument.resx">
+      <DependentUpon>XtraUserControlCreateDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\XtraUserControlDocuments.resx">
+      <DependentUpon>XtraUserControlDocuments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\XtraUserControlProducts.resx">
+      <DependentUpon>XtraUserControlProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddBarcodeForm.resx">
+      <DependentUpon>AddBarcodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddContragentForm.resx">
+      <DependentUpon>AddContragentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddDocumentForm.resx">
+      <DependentUpon>AddDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddDocumentRowForm.resx">
+      <DependentUpon>AddDocumentRowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddLotForm.resx">
+      <DependentUpon>AddLotForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddProductForm.resx">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddProductToDocumentRowForm.resx">
+      <DependentUpon>AddProductToDocumentRowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditBarcodeForm.resx">
+      <DependentUpon>EditBarcodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditContragentForm.resx">
+      <DependentUpon>EditContragentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditDocumentForm.resx">
+      <DependentUpon>EditDocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditDocumentRowForm.resx">
+      <DependentUpon>EditDocumentRowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditLotForm.resx">
+      <DependentUpon>EditLotForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditProductForm.resx">
+      <DependentUpon>EditProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MixedPaymentForm.resx">
+      <DependentUpon>MixedPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PayInCashForm.resx">
+      <DependentUpon>PayInCashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectContragentForm.resx">
+      <DependentUpon>SelectContragentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\XtraReportDocument.resx">
+      <DependentUpon>XtraReportDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Barcode.datasource" />
+    <None Include="Properties\DataSources\Contragent.datasource" />
+    <None Include="Properties\DataSources\Document.datasource" />
+    <None Include="Properties\DataSources\DocumentPayment.datasource" />
+    <None Include="Properties\DataSources\DocumentRow.datasource" />
+    <None Include="Properties\DataSources\Lot.datasource" />
+    <None Include="Properties\DataSources\Product.datasource" />
+    <None Include="Properties\DataSources\WereDesktop.Classes.DocumentRowCart.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="WereDesktopModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WereDesktopModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="WereDesktopModel.edmx.diagram">
+      <DependentUpon>WereDesktopModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\were_black_53t_icon.ico" />
+    <Content Include="WereDesktopModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WereDesktopModel.edmx</DependentUpon>
+      <LastGenOutput>WereDesktopModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="WereDesktopModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WereDesktopModel.edmx</DependentUpon>
+      <LastGenOutput>WereDesktopModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
